@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sict.andridodemo1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndridoDemo1">
+        <activity android:name=".shop">
+
+        </activity>
+        <activity android:name=".lianxihuichuan2" />
+        <activity android:name=".lianxihuichuan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".second" />
+        <activity android:name=".Dialog1" />
+        <activity android:name=".Dialog" />
+        <activity android:name=".T301_dog" />
+        <activity android:name="com.sict.chapter03.shoues" />
+        <activity android:name="com.sict.chapter03.T302_figureGuess" />
+        <activity android:name="com.sict.chapter03.P301_clickCount" />
+        <activity android:name="com.sict.chapter03.T301_trottingHorselamp03" />
+        <activity android:name="com.sict.chapter03.T301_trottingHorselamp02" />
+        <activity android:name="com.sict.chapter03.T301_trottingHorselamp" />
+        <activity
+            android:name="com.sict.chapter02.P204_gameluncher"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.sict.chapter02.T204_trintConstraintLayout" />
+        <activity android:name="com.sict.chapter02.P03_trident" />
+        <activity android:name="com.sict.chapter02.T03_leaves" />
+        <activity android:name="com.sict.chapter02.p202_gravityTest" />
+        <activity android:name="com.sict.chapter02.p201_linnerLayoutTest" />
+        <activity android:name="com.sict.chapter02.T202_userRegister" />
+        <activity android:name="com.sict.chapter02.T01_textViewTest" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

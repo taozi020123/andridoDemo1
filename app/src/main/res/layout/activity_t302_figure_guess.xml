@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sict.chapter03.T302_figureGuess">
+
+    <TextView
+        android:id="@+id/activity_t302_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="29dp"
+        android:text="与手机猜拳"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_t302_tv_player"
+        app:layout_constraintEnd_toEndOf="@+id/activity_t302_tv_player"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_t302_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="75dp"
+        android:text="手机"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_t302_iv_phone"
+        app:layout_constraintEnd_toStartOf="@+id/activity_t302_tv_player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_t302_tv_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="玩家"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_t302_ib_scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_t302_tv_phone"
+        app:layout_constraintTop_toBottomOf="@+id/activity_t302_tv_title" />
+
+    <ImageView
+        android:id="@+id/activity_t302_iv_phone"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="391dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/activity_t302_ib_rock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_t302_tv_phone"
+        app:srcCompat="@drawable/t302_caiquan" />
+
+    <ImageButton
+        android:id="@+id/activity_t302_ib_scissors"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_t302_ib_rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_t302_tv_phone"
+        app:layout_constraintTop_toBottomOf="@+id/activity_t302_tv_player"
+        app:srcCompat="@drawable/t302_scissors" />
+
+    <ImageButton
+        android:id="@+id/activity_t302_ib_rock"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_t302_tv_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_t302_iv_phone"
+        app:layout_constraintTop_toBottomOf="@+id/activity_t302_ib_scissors"
+        app:srcCompat="@drawable/t302_rock" />
+
+    <ImageButton
+        android:id="@+id/activity_t302_ib_paper"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/activity_t302_ib_rock"
+        app:layout_constraintStart_toStartOf="@+id/activity_t302_ib_rock"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/t302_paper" />
+
+    <TextView
+        android:id="@+id/activity_t302_tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="219dp"
+        android:text="判定输赢"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_t302_ib_rock" />
+</androidx.constraintlayout.widget.ConstraintLayout>
